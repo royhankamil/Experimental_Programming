@@ -15,6 +15,7 @@ class App
     protected:
 
     private:
+        void Log(std::string info, std::string message);
 };
 
 #endif // APP_H

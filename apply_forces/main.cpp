@@ -19,8 +19,8 @@ int main()
     {
         // Process events
         sf::Clock clock;
-        float dt = clock.restart().asSeconds();
         sf::Event Event;
+        float dt = clock.restart().asSeconds();
         while (Window.waitEvent(Event))
         {
             // Close window : exit
@@ -29,7 +29,7 @@ int main()
 
             float speed = 4;
             std::cout << dt << std::endl;
-            object1.move(speed, 0);
+            object1.move(speed * dt, 0);
 
             Window.clear(sf::Color::Black);
 
